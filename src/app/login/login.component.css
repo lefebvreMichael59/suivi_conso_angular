@@ -1,0 +1,30 @@
+form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+#spanUsername{
+  margin: 2px;
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+#inputUserName{
+  margin: 2px;
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+#spanPassword{
+  margin: 2px;
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+#inputPassword{
+  margin: 2px;
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+#buttonSubmit{
+  margin: 2px;
+  grid-area: 3 / 1 / 4 / 3;
+}

@@ -1,0 +1,20 @@
+<body>
+  <form>
+    <label id="labelSignUpUserName">Username :</label>
+    <input id="inputSignUpUserName" type="text" placeholder="Pseudo" [(ngModel)]="newUserSignUp.name" name="username" required>
+
+    <label id="labelSignUpFirstname">Firstname :</label>
+    <input id="inputSignUpFirstName" type="text" placeholder="Prenom" [(ngModel)]="newUserSignUp.firstname" name="firstname" required>
+
+    <label id="labelSignUpLastname">Lastname :</label>
+    <input id="inputSignUpLastName" type="text" placeholder="Nom" [(ngModel)]="newUserSignUp.lastname" name="lastname" required>
+
+    <label id="labelSignUpEmail">Email :</label>
+    <input id="inputSignUpEmail" type="email" placeholder="Email" [(ngModel)]="newUserSignUp.email" name="email" required>
+
+    <label id="labelSignUpPassword">Password :</label>
+    <input id="inputSignUpPassword" type="password" placeholder="Password" [(ngModel)]="newUserSignUp.password" name="password" required>
+
+    <button id="buttonSignUpSaveUser" (click)="saveUser($event, newUserSignUp)">Create User</button>
+  </form>
+</body>

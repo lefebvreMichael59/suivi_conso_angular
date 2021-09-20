@@ -1,0 +1,28 @@
+.container{
+  display:grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.7fr 3.5fr 0.7fr 1fr 0.8fr;
+}
+
+header{
+  /* debut rangée / debut colonne / fin rangée / fin colonne */
+  grid-area: 1 / 1 / 2 / 4;
+}
+
+#picture{
+  grid-area: 2 / 1 / 4 / 4;
+
+}
+
+#info{
+  grid-area: 3 / 2 / 4 / 3;
+}
+
+main{
+  grid-area: 4 / 1 / 5 / 4;
+}
+
+footer{
+  grid-area: 5 / 1 / 6 / 4;
+}

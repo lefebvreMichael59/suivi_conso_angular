@@ -1,0 +1,10 @@
+<body>
+  <form>
+    <span id="spanUsername">Username : </span> <input id="inputUserName" type="text" value="{{login.username}}" (change)="updateLoginUsername($event)">
+    <br/>
+    <span id="spanPassword">Password : </span> <input id="inputPassword" type="password" value="{{login.password}}" (change)="updateLoginPassword($event)">
+    <br/>
+    <button id="buttonSubmit" type="submit" (click)="connection($event, login)">S'identifier</button>
+  </form>
+</body>
+

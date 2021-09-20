@@ -1,0 +1,27 @@
+
+<div>
+  <h3>Vos véhicules :</h3>
+  <ul  class="list-group">
+    <li class="list-group-item"
+        [class.active]="selectedVehicule.id == vehicule.id"
+        (click)="setSelectedVehicule($event, vehicule)"
+        *ngFor="let vehicule of userVehicules">
+      <div id="div_list">
+        <div class="div_nom_vehicule">{{vehicule.nom}}</div>
+        <div class="div_marque_model">{{vehicule.marque}} {{vehicule.model}}</div>
+        <div class="div_bouton">
+          <button (click)="ajoutPlein($event, vehicule)">
+            Plein
+          </button>
+          <button (click)="ajoutEntretien($event, vehicule)">
+            Entretien
+          </button>
+          <button
+            (click)="suppressionVehicule($event, vehicule)">
+            Supprimer
+          </button>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,13 @@
+<!--<div id="div_menu"><app-login (userVehicules)="setUserVehicules($event)"></app-login></div>-->
+<div id="div_menu">
+  <div *ngIf="userIsAuth !== 'true'">
+    <a (click)="openSignUp()"><H3>Sign up</H3></a>
+    <a (click)="openDialog()"><H3>Sign In</H3></a>
+  </div>
+  <div  *ngIf="userIsAuth === 'true'">
+    <a (click)="logOut()"><h3>Logout</h3></a>
+  </div>
+</div>
+
+
+
